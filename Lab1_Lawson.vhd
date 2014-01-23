@@ -41,15 +41,29 @@ end Lab1_Lawson;
 
 architecture Behavioral of Lab1_Lawson is
 
+			  Signal Ant : STD_LOGIC;
+			  Signal Bnt : STD_LOGIC;
+			  Signal Cnt : STD_LOGIC;
 			  Signal AntB : STD_LOGIC;
 			  Signal AntC : STD_LOGIC;
-			  Signal ABntCnt : STD_LOGIC
+			  Signal ABntCnt : STD_LOGIC;
 			  Signal BntC : STD_LOGIC;
 			  Signal BCnt : STD_LOGIC;
-			  Signal Final : std_logic_vector(3 downto 0);
+			  --Signal Final : std_logic_vector(3 downto 0);
 
 begin
 
+			  Ant <= not A;
+			  Bnt <= not B;
+			  Cnt	<= not C;
+			  AntB <= Ant and B;
+			  AntC <= Ant and C;
+			  ABntCnt <= A and Bnt and Cnt;
+			  BntC <= Bnt and C;
+			  BCnt <= B and Cnt;
+			  X <= AntB or AntC or ABntCnt;
+			  Y <= BntC or BCnt; 
+			  Z <= C;
 
 end Behavioral;
 
