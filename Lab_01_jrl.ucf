@@ -1,0 +1,49 @@
+## This part is the 3 bit converter. #
+#
+#NET "A" LOC = "R17"; # Type = INPUT, Sch name = SW0
+#NET "B" LOC = "N17"; # Type = INPUT, Sch name = SW1
+#NET "C" LOC = "L13"; # Type = INPUT, Sch name = SW2
+## The following are examples of connecting a std_logic_vector to input pins
+#NET "switchin<7>" LOC = "R17"; # Type = INPUT, Sch name = SW7
+#NET "switchin<6>" LOC = "N17"; # Type = INPUT, Sch name = SW6
+#NET "switchin<5>" LOC = "L13"; # Type = INPUT, Sch name = SW5
+#
+## LED outputs constraints
+#NET "X"  LOC = "R4"; # Sch name = LD7
+#NET "Y"  LOC = "F4"; # Sch name = LD6
+#NET "Z"  LOC = "P15"; # Sch name = LD5
+## The following are examples of connecting a std_logic_vector to output pins
+#NET "leds<7>"  LOC = "R4"; # Sch name = LD3
+#NET "leds<6>"  LOC = "F4"; # Sch name = LD4
+#NET "leds<5>"  LOC = "P15"; # Sch name = LD5
+
+##########################################################################################
+
+#                                 8 Bit Converter                                        #
+
+##########################################################################################
+
+# ==== Input Switches ====
+
+# Putting Inputs into STD Logic vector
+NET "A<7>" LOC = "R17"; # Type = INPUT, Sch name = SW7
+NET "A<6>" LOC = "N17"; # Type = INPUT, Sch name = SW6
+NET "A<5>" LOC = "L13"; # Type = INPUT, Sch name = SW5
+NET "A<4>" LOC = "L14"; # Type = INPUT, Sch name = SW4
+NET "A<3>" LOC = "K17"; # Type = INPUT, Sch name = SW3
+NET "A<2>" LOC = "K18"; # Type = INPUT, Sch name = SW2
+NET "A<1>" LOC = "H18"; # Type = INPUT, Sch name = SW1
+NET "A<0>" LOC = "G18"; # Type = INPUT, Sch name = SW0
+
+# LED outputs constraints
+
+# Connecting a std_logic_vector to output pins
+NET "B<7>"  LOC = "R4"; # Sch name = LD7
+NET "B<6>"  LOC = "F4"; # Sch name = LD6
+NET "B<5>"  LOC = "P15"; # Sch name = LD5
+NET "B<4>"  LOC = "E17";  # Sch name = LD4
+NET "B<3>"  LOC = "K14";  # Sch name = LD3
+NET "B<2>"  LOC = "K15"; # Sch name = LD2
+NET "B<1>"  LOC = "J15";  # Sch name = LD1
+NET "B<0>"  LOC = "J14";  # Sch name = LD0
+
